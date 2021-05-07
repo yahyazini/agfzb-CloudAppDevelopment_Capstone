@@ -1,11 +1,11 @@
   applications:
-  - name: dealerreiew
+  - name: yz-app
     routes:
-      - route: host.domain
+      - route: yz-django.apic.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: dealerreiew-nginx
+  - name: yz-app-nginx
     routes:
-      - route: host.domain/static
+      - route: yz-django.apic.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
