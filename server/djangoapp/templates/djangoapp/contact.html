@@ -1,26 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dealership Review</title>    
-    {% load static %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% include 'partials/head.html' %}
 
-</head>
+{% include 'partials/nav.html' %}
+    <div class="container">
+        <h1>Contact Us</h1>
+        <ul>
+            <li><address>111 Street, Some City MA, 02010</address></li>
+            <li>Call us: <a href="tel:76592020">76592020</a></li>
+        </ul>
+    </div>
 
-    <body>
-        {% include 'partials/nav.html' %}
+{% include 'partials/footer.html' %}
         
-        <div class="container">
-            <h1>Contact Us</h1>
-            <ul>
-                <li><address>111 Street, Some City MA, 02010</address></li>
-                <li>Call us: <a href="tel:76592020">76592020</a></li>
-            </ul>
-        </div>
+        
 
-    </body>
-
-</html>
 
 

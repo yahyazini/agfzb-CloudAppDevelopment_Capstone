@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% load static %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-    <body>
-        {% include 'partials/nav.html' %}
-        <form action="{% url 'djangoapp:registration_request' %}" method="post">
+{% include 'partials/head.html' %}
+
+{% include 'partials/nav.html' %}
+    <form action="{% url 'djangoapp:registration_request' %}" method="post">
             <div class="container">
                 <h1>Register</h1>
                 <hr>
@@ -33,5 +27,5 @@
                 </div>
             </div>
         </form>
-    </body>
-</html>
+
+{% include 'partials/footer.html' %}
